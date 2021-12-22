@@ -10,9 +10,8 @@ Future<List<Data>> fetchData() async {
   );
 
   if (response.statusCode == 200) {
-    // SharedPreferences localStorage = await SharedPreferences.getInstance();
     List jsonResponse = json.decode(response.body);
-    // localStorage.setString('DataApi', json.decode(response.body));
+
     // print(jsonResponse);
     return jsonResponse.map((data) => new Data.fromJson(data)).toList();
   } else {

@@ -30,19 +30,6 @@ class _Pages1State extends State<Pages1> {
     futureData = fetchData();
   }
 
-  // _loadUserData() async {
-  //   SharedPreferences localStorage = await SharedPreferences.getInstance();
-  //   var dataAPi = jsonDecode(localStorage.getString('DataApi'));
-  //   // print('-------------------');
-  //   // print(data);
-
-  //   if (dataAPi != null) {
-  //     setState(() {
-  //       title = dataAPi['title'];
-  //     });
-  //   }
-  // }
-
   // ignore: annotate_overrides
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
